@@ -1,0 +1,19 @@
+public class Main
+{
+ public static void main(String[] args) {
+     int[]a={2,7,4,3,6};
+     int[]b={3,8,6,8,2};
+  System.out.println("Duplicate elements in given array");
+  for(int m=0;m<a.length;m++){
+      for(int j=0;j<b.length;j++){
+          if(a[m]==b[j])
+          System.out.println("Number: "+a[m]+"found repeating at position:"+m+"  ,Repeted at position"+j);
+      }
+  }
+ }
+}
+o/p
+Duplicate elements in given array
+Number: 2found repeating at position:0  ,Repeted at position4
+Number: 3found repeating at position:3  ,Repeted at position0
+Number: 6found repeating at position:4  ,Repeted at position2
