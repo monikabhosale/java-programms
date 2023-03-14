@@ -1,0 +1,128 @@
+//Java private no-arg constructor
+class Main {
+
+  int i;
+
+  // constructor with no parameter
+  private Main() {
+    i = 5;
+    System.out.println("Constructor is called");
+  }
+
+  public static void main(String[] args) {
+
+    // calling the constructor without any parameter
+    Main obj = new Main();
+    System.out.println("Value of i: " + obj.i);
+  }
+}
+
+o/p:
+Constructor is called
+Value of i: 5
+
+
+// Java public no-arg constructors
+class Company {
+  String name;
+
+  // public constructor
+  public Company() {
+    name = "Monikabhosale";
+  }
+}
+
+class Main {
+  public static void main(String[] args) {
+
+    // object is created in another class
+    Company obj = new Company();
+    System.out.println("Company name = " + obj.name);
+  }
+}
+o/p
+Company name = Monikabhosale
+
+// Parameterized constructor
+class Main {
+
+  String languages;
+
+  // constructor accepting single value
+  Main(String lang) {
+    languages = lang;
+    System.out.println(languages + " Programming Language");
+  }
+
+  public static void main(String[] args) {
+
+    // call constructor by passing a single value
+    Main obj1 = new Main("Java");
+    Main obj2 = new Main("Python");
+    Main obj3 = new Main("C");
+  }
+}
+o/p:
+Java Programming Language
+Python Programming Language
+C Programming Language
+
+//Java Default Constructor
+class Main {
+
+  int m;
+  boolean b;
+
+  public static void main(String[] args) {
+
+    // A default constructor is called
+    Main obj = new Main();
+
+    System.out.println("Default Value:");
+    System.out.println("a = " + obj.m);
+    System.out.println("b = " + obj.b);
+  }
+}
+o/p:
+Default Value:
+a = 0
+b = false
+
+// Java Constructor Overloading
+
+class Main {
+
+  String language;
+
+  // constructor with no parameter
+  Main() {
+    this.language = "Java";
+  }
+
+  // constructor with a single parameter
+  Main(String language) {
+    this.language = language;
+  }
+
+  public void getName() {
+    System.out.println("Programming Langauage: " + this.language);
+  }
+
+  public static void main(String[] args) {
+
+    // call constructor with no parameter
+    Main obj1 = new Main();
+
+    // call constructor with a single parameter
+    Main obj2 = new Main("Python");
+
+    obj1.getName();
+    obj2.getName();
+  }
+}
+o/p:
+Programming Langauage: Java
+Programming Langauage: Python
+
+
+
