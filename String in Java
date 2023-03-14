@@ -1,0 +1,87 @@
+//1.Create a String in Java
+
+class Main {
+  public static void main(String[] args) {
+    
+    // create strings
+    String first = "Monika";
+    String second = "Ramhari";
+    String third = "Bhosale";
+
+    // print strings
+    System.out.println(first);   // print monika
+    System.out.println(second);  // print Ramhari
+    System.out.println(third);   // print Bhosale
+  }
+}
+o/p:
+Monika
+Ramhari
+Bhosale
+
+// 2. Get length of a String
+class Main {
+  public static void main(String[] args) {
+
+    // create a string
+    String Name = "Hello! Monika ";
+    System.out.println("String: " + Name);
+
+    // get the length of greet
+    int length = Name.length();
+    System.out.println("Length: " + length);
+  }
+}
+o/p:
+String: Hello! Monika 
+Length: 14
+
+//3. Join Two Java Strings
+class Main {
+  public static void main(String[] args) {
+
+    // create first string
+    String first = "Monika ";
+    System.out.println("First String: " + first);
+
+    // create second
+    String second = "Bhosale";
+    System.out.println("Second String: " + second);
+
+    // join two strings
+    String joinedString = first.concat(second);
+    System.out.println("Joined String: " + joinedString);
+  }
+}
+
+o/p:
+First String: Monika 
+Second String: Bhosale
+Joined String: Monika Bhosale
+
+//4.Compare two Strings
+class Main {
+  public static void main(String[] args) {
+
+    // create 3 strings
+    String first = "monika";
+    String second = "love";
+    String third = "monika";
+   
+
+    // compare first and second strings
+    boolean result1 = first.equals(second);
+    System.out.println("Strings first and second are equal: "   + result1);
+
+    // compare first and third strings
+    boolean result2 = first.equals(third);
+    System.out.println("Strings first and third are equal: "   + result2);
+    
+  }
+}
+o/p:
+Strings first and second are equal: false
+Strings first and third are equal: true
+
+
+
