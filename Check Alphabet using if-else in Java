@@ -1,0 +1,52 @@
+//Check Alphabet using if-else in Java
+
+import java.util.Scanner;
+public class CodesCracker
+{
+   public static void main(String[] args)
+   {
+      char ch;
+      Scanner s = new Scanner(System.in);
+      
+      System.out.print("Enter a Character: ");
+      ch = s.next().charAt(0);
+      
+      if((ch>='A' && ch<='z') || (ch>='a' && ch<='z'))
+      {
+         System.out.println("\nIt is an Alphabet.");
+      }
+      else
+      {
+         System.out.println("\nIt is not an Alphabet.");
+      }
+   }
+}
+
+//Enter a Character: a
+It is an Alphabet.
+
+Check Alphabet or Digit in Java
+This program checks whether a given character is an alphabet, a digit, or any other character.
+
+
+import java.util.Scanner;
+public class CodesCracker
+{
+   public static void main(String[] args)
+   {
+      Scanner s = new Scanner(System.in);
+      
+      System.out.print("Enter a Character: ");
+      char ch = s.next().charAt(0);
+      
+      if((ch>='A' && ch<='z') || (ch>='a' && ch<='z'))
+         System.out.println("\nThe character \'" +ch+ "\' is an Alphabet.");
+      else if(ch>='0' && ch<='9')
+         System.out.println("\nThe character \'" +ch+ "\' is a Digit.");
+      else
+         System.out.println("\nThe character \'" +ch+ "\' is neither an Alphabet nor a Digit.");
+   }
+}
+
+//Enter a Character: 6
+The character '6' is a Digit.
